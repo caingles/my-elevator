@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindDev": "npx tailwindcss -i ./src/css/tailwind.css -o ./dist/style-tailwind.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/caingles/my-elevator/issues"
   },
-  "homepage": "https://github.com/caingles/my-elevator#readme"
+  "homepage": "https://github.com/caingles/my-elevator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
 }
