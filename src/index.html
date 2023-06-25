@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/style-tailwind.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/css/style.css" />
   </head>
   <body>
-    <h1 class="text-5xl font-light">Hello worlds!</h1>
+    <h1 class="text-5xl font-light text-center">Welcome to my elevator</h1>
+
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-slate-500 flex flex-col">
+        <div class="mt-5 text-center">Nº de personas</div>
+        <div class="flex flex-wrap">
+          <button data-person-1 class="btn m-5">1</button>
+          <button data-person-2 class="btn m-5">2</button>
+          <button data-person-3 class="btn m-5">3</button>
+          <button data-person-4 class="btn m-5">4</button>
+          <button data-person-5 class="btn m-5">5</button>
+        </div>
+        <button data-none class="btn m-5">Ninguna</button>
+      </div>
+      <div class="bg-gray-50 flex flex-col">
+        <div class="mt-5 text-center text-cyan-950">Nº de piso</div>
+        <div class="flex flex-wrap">
+          <button data-piso-1 class="btn m-5">1</button>
+          <button data-piso-2 class="btn m-5">2</button>
+          <button data-piso-3 class="btn m-5">3</button>
+          <button data-piso-4 class="btn m-5">4</button>
+          <button data-piso-5 class="btn m-5">5</button>
+        </div>
+        <button data-stop class="btn m-5">Emergency stop</button>
+      </div>
+      <div class="elevator">
+        <div class="door-left"></div>
+        <div class="door-right"></div>
+      </div>
+      <button class="btn btn-primary m-5">Stop</button>
+      <button class="btn btn-disabled m-5"></button>
+      <div class="btn btn-circle m-5 text-center">1</div>
+    </div>
+
+    <script src="/src/js/index.js"></script>
   </body>
 </html>
